@@ -1,0 +1,38 @@
+﻿Der Buildvorgang wurde am 08/04/15 22:21:47 gestartet.
+     1>Projekt "C:\Users\Philipp\Downloads\vstsdk360_22_11_2013_build_100\VST3 SDK\public.sdk\samples\vst\note_expression_synth\win\note_expression_synth_vc10.vcxproj" auf Knoten "2", Build Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../../.. /I../../../../../vstgui4 /ZI /nologo /W3 /WX- /Od /Oy- /D WINDOWS=1 /D DEVELOPMENT=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D VSTGUI_LIVE_EDITING=1 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /FR"Win32\Debug\\" /Gd /TP /analyze- /errorReport:prompt /MP "..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3groupcontroller.cpp" "..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3padcontroller.cpp" ..\source\factory.cpp ..\source\note_expression_synth_controller.cpp ..\source\note_expression_synth_processor.cpp ..\source\note_expression_synth_ui.cpp ..\source\note_expression_synth_voice.cpp ..\..\..\..\source\main\dllmain.cpp ..\..\..\..\source\main\pluginfactoryvst3.cpp ..\..\..\..\source\common\pluginview.cpp ..\..\..\..\source\vst\vstaudioeffect.cpp ..\..\..\..\source\vst\vstbus.cpp ..\..\..\..\source\vst\vstcomponent.cpp ..\..\..\..\source\vst\vstcomponentbase.cpp ..\..\..\..\source\vst\vsteditcontroller.cpp ..\..\..\..\source\vst\vstguieditor.cpp ..\..\..\..\source\vst\vstinitiids.cpp ..\..\..\..\source\vst\vstnoteexpressiontypes.cpp ..\..\..\..\source\vst\vstparameters.cpp ..\..\..\..\..\pluginterfaces\base\conststringtable.cpp ..\..\..\..\..\pluginterfaces\base\funknown.cpp ..\..\..\..\..\pluginterfaces\base\ustring.cpp "..\..\..\..\..\vstgui4\vstgui\plugin-bindings\vst3editor.cpp" ..\..\..\..\..\vstgui4\vstgui\vstgui_uidescription_win32.cpp ..\..\..\..\..\vstgui4\vstgui\vstgui_win32.cpp ..\source\note_touch_controller.cpp
+         vst3groupcontroller.cpp
+         vst3padcontroller.cpp
+         factory.cpp
+         note_expression_synth_controller.cpp
+         note_expression_synth_processor.cpp
+         note_expression_synth_ui.cpp
+         note_expression_synth_voice.cpp
+         dllmain.cpp
+         pluginfactoryvst3.cpp
+         pluginview.cpp
+         vstaudioeffect.cpp
+         vstbus.cpp
+         vstcomponent.cpp
+         vstcomponentbase.cpp
+         vsteditcontroller.cpp
+         vstguieditor.cpp
+         vstinitiids.cpp
+         vstnoteexpressiontypes.cpp
+         vstparameters.cpp
+         conststringtable.cpp
+         funknown.cpp
+         ustring.cpp
+         vst3editor.cpp
+         vstgui_uidescription_win32.cpp
+         vstgui_win32.cpp
+         note_touch_controller.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _VC80_UPGRADE=0x0710 /l"0x0409" /I../../../../.. /nologo /fo"Win32\Debug\note_expression_synth.res" note_expression_synth.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1228,5): error MSB3191: Das Verzeichnis "C:\Program Files (x86)\Common Files\VST3\Steinberg" kann nicht erstellt werden. Access to the path 'C:\Program Files (x86)\Common Files\VST3\Steinberg' is denied.
+     1>Die Erstellung des Projekts "C:\Users\Philipp\Downloads\vstsdk360_22_11_2013_build_100\VST3 SDK\public.sdk\samples\vst\note_expression_synth\win\note_expression_synth_vc10.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+
+Fehler beim Buildvorgang.
+
+Verstrichene Zeit 00:00:16.74
