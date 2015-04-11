@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{200A38AC-0EF4-ADEA-7568-DD19318F0919}") = "JuceVSTHost", "JuceVSTHost.vcxproj", "{8DC8E3BC-5681-3EA6-C874-59CA98B6AAF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DC8E3BC-5681-3EA6-C874-59CA98B6AAF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DC8E3BC-5681-3EA6-C874-59CA98B6AAF2}.Debug|Win32.Build.0 = Debug|Win32
+		{8DC8E3BC-5681-3EA6-C874-59CA98B6AAF2}.Release|Win32.ActiveCfg = Release|Win32
+		{8DC8E3BC-5681-3EA6-C874-59CA98B6AAF2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
