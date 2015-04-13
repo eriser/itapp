@@ -9,11 +9,6 @@
 
 namespace ttmm { // Trommel-Tanz-Musik-Maschine
 
-    // http://en.wikipedia.org/wiki/MIDI_Tuning_Standard
-    float midi_to_hertz(std::uint8_t note_number) {
-        return static_cast<float>(std::pow(2, (note_number - 69.0f) / 12) * 440.0f);
-    }
-
     enum class MidiCodes {
         NoteOn = 0x90,
         NoteOff = 0x80
