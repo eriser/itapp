@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\VST2-SDK">
+      <UniqueIdentifier>{3920cb49-9c36-4db8-913b-92f946177cb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VST2-SDK\public.sdk">
+      <UniqueIdentifier>{ff9081a2-a124-47b4-90bc-e6bd52010331}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SDK\VST2\public.sdk\source\vst2.x\audioeffect.cpp">
+      <Filter>Source Files\VST2-SDK\public.sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SDK\VST2\public.sdk\source\vst2.x\audioeffectx.cpp">
+      <Filter>Source Files\VST2-SDK\public.sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SDK\VST2\public.sdk\source\vst2.x\vstplugmain.cpp">
+      <Filter>Source Files\VST2-SDK\public.sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="vst2plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vst2Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Support\oscillator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VST2Plugin.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
