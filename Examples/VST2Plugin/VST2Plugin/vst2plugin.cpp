@@ -65,7 +65,7 @@ void ttmm::VST2Plugin::note_off_event(void) {
 void ttmm::VST2Plugin::note_on_event(Note const& note, Velocity const& velocity) {
     current_note_ = note;
     current_velocity_ = velocity;
-    oscillator_->set_frequency(midi_to_hertz(note));
+    oscillator_->set_frequency(frequency_);
     playing_ = true;
 }
 
@@ -94,21 +94,8 @@ VstInt32 ttmm::VST2Plugin::canDo(char* ability) {
 
 void ttmm::VST2Plugin::setParameter(VstInt32 index, float value) {
     if (index == 0) {
-        auto old_oscillator = oscillator_;
         parameter_oscillator_ = value;
         // do sth. with that info
-        if (value < 0.33f) {
-            oscillator_ = &sine_;
-        }
-        else if (value < 0.66f) {
-            oscillator_ = &saw_;
-        }
-        else {
-            oscillator_ = &square_;
-        }
-        if (old_oscillator != oscillator_) {
-            oscillator_->reset();
-        }
     }
 }
 float ttmm::VST2Plugin::getParameter(VstInt32 index) {

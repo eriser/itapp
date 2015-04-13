@@ -22,7 +22,9 @@ namespace ttmm_oscillator {
         using audioSignalType = AudioSignalType;
         using table = std::array<audioSignalType, tableSize>;
 
-        virtual ~InterpolatingTableLookupOscillator(void) = default;
+        virtual ~InterpolatingTableLookupOscillator(void) {
+            set_frequency(440.0f);
+        }
 
         virtual void set_sampling_rate(unsigned sr) override final {
             sampling_rate_ = sr;
@@ -75,12 +77,10 @@ namespace ttmm_oscillator {
 
     protected:
         virtual void gen_table(table& table_) = 0;
-        float frequency_;
 
     private:
         table table_;      ///< the waveform
         float phase_{ 0 }; ///< position in the waveform
-        //float frequency_{ 440.0f }; ///< Current frequency of this oscillator
         unsigned sampling_rate_{ 44100 }; ///< How many samples per second?
         float increment_{ 1.0f }; ///< Stepsize when retrieving values from the table
     };
