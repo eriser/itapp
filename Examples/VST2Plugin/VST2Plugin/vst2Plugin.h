@@ -58,13 +58,24 @@ namespace ttmm { // Trommel-Tanz-Musik-Maschine
 		virtual VstInt32 canDo(char* ability) override;
 
         virtual VstInt32 getNumMidiInputChannels(void) override { return 1; }
-
         virtual VstInt32 getNumMidiOutputChannels(void) override { return 0; }
+
+        virtual void setParameter(VstInt32 index, float value) override;
+        virtual float getParameter(VstInt32 index) override;
+        virtual void getParameterDisplay(VstInt32 index, char* text) override;
+        virtual void getParameterLabel(VstInt32 index, char* text) override;
+        virtual void getParameterName(VstInt32 index, char* text) override;
 
     private:
         Abilities abilities_; ///< queried by the host
 
-        ttmm_oscillator::Sine sine;
+        ttmm_oscillator::Sine sine_;
+        ttmm_oscillator::Saw saw_;
+        ttmm_oscillator::Square square_;
+
+        ttmm_oscillator::Oscillator* oscillator_; ///< active one
+        float parameter_oscillator_ = 0.0f; ///< selected by the user
+
         Frequency frequency_{ 880.0f };
         Phase initial_phase_{ 0.0f };
         SamplingRate sampling_rate_{ 44100 };
